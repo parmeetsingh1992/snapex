@@ -1,0 +1,30 @@
+create database snapex;
+
+use snapex;
+
+create table employee(
+employee_id int primary key,
+employee_name varchar(100),
+employee_email varchar(100),
+phone_no int,
+password varchar(100)
+);
+
+create table author(
+author_id int primary key,
+author_name varchar(100),
+author_rating float 
+);
+
+create table books(
+book_id int,
+book_name varchar(100),
+book_author_id int,
+book_user_id int,
+book_owner_id int,
+is_available boolean,
+book_description varchar(1000),
+foreign key (book_author_id) references author(author_id),
+foreign key (book_user_id) references employee(employee_id),
+foreign key (book_owner_id) references employee(employee_id)
+);
