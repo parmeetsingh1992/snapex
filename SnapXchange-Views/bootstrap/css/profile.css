@@ -1,0 +1,24 @@
+.user_profile{
+  width: 800px;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  margin-left: 23%;
+  margin-top: 23%;
+  vertical-align: middle;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#footer{
+  height: 40px;
+  background-color: #000000;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  padding-top:10px;
+  text-align: center;
+}
